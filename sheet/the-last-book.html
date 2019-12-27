@@ -26,7 +26,7 @@
 </label>
   <label style="width:50%; " class="sheet-mzabj1   sheet-right">
   <input type="text" name="attr_iq_max" value=""  autocomplete="new-password" class="sheet-mzabj1">
-  <button type="roll" name="roll_iq_max" value="&amp;{template:TLBskillRoll} {{skill=Intelligence}} {{roll=[[d100]]}} {{chance=@{iq|max}}}" class="sheet-mzabj1">Chance</button>
+  <button type="roll" name="roll_iq_max" value="&amp;{template:TLBskillRoll} {{name=@{character-name}}} {{skill=Intelligence}} {{roll=[[d100cs&lt;3cf&gt;99&lt;/FieldGroup&gt;]]}} {{chance=@{iq|max}}} {{note=?{Note}}}" class="sheet-mzabj1">Chance</button>
 </label>
 </div>
   <div class="sheet-19fodwe">
@@ -37,7 +37,7 @@
 </label>
   <label style="width:50%; " class="sheet-mzabj1   sheet-right">
   <input type="text" name="attr_wl_max" value=""  autocomplete="new-password" class="sheet-mzabj1">
-  <button type="roll" name="roll_wl_max" value="&amp;{template:TLBskillRoll} {{skill=Willpower}} {{roll=[[d100]]}} {{chance=@{wl|max}}}" class="sheet-mzabj1">Chance</button>
+  <button type="roll" name="roll_wl_max" value="&amp;{template:TLBskillRoll} {{name=@{character-name}}} {{skill=Willpower}} {{roll=[[d100cs&lt;3cf&gt;99&lt;/FieldGroup&gt;]]}} {{chance=@{wl|max}}} {{note=?{Note}}}" class="sheet-mzabj1">Chance</button>
 </label>
 </div>
   <div class="sheet-19fodwe">
@@ -48,7 +48,7 @@
 </label>
   <label style="width:50%; " class="sheet-mzabj1   sheet-right">
   <input type="text" name="attr_aw_max" value=""  autocomplete="new-password" class="sheet-mzabj1">
-  <button type="roll" name="roll_aw_max" value="&amp;{template:TLBskillRoll} {{skill=Awareness}} {{roll=[[d100]]}} {{chance=@{aw|max}}}" class="sheet-mzabj1">Chance</button>
+  <button type="roll" name="roll_aw_max" value="&amp;{template:TLBskillRoll} {{name=@{character-name}}} {{skill=Awareness}} {{roll=[[d100cs&lt;3cf&gt;99&lt;/FieldGroup&gt;]]}} {{chance=@{aw|max}}} {{note=?{Note}}}" class="sheet-mzabj1">Chance</button>
 </label>
 </div>
   <div class="sheet-19fodwe">
@@ -59,7 +59,7 @@
 </label>
   <label style="width:50%; " class="sheet-mzabj1   sheet-right">
   <input type="text" name="attr_st_max" value=""  autocomplete="new-password" class="sheet-mzabj1">
-  <button type="roll" name="roll_st_max" value="&amp;{template:TLBskillRoll} {{skill=Strength}} {{roll=[[d100]]}} {{chance=@{st|max}}}" class="sheet-mzabj1">Chance</button>
+  <button type="roll" name="roll_st_max" value="&amp;{template:TLBskillRoll} {{name=@{character-name}}} {{skill=Strength}} {{roll=[[d100cs&lt;3cf&gt;99&lt;/FieldGroup&gt;]]}} {{chance=@{st|max}}} {{note=?{Note}}}" class="sheet-mzabj1">Chance</button>
 </label>
 </div>
   <div class="sheet-19fodwe">
@@ -70,7 +70,7 @@
 </label>
   <label style="width:50%; " class="sheet-mzabj1   sheet-right">
   <input type="text" name="attr_ag_max" value=""  autocomplete="new-password" class="sheet-mzabj1">
-  <button type="roll" name="roll_ag_max" value="&amp;{template:TLBskillRoll} {{skill=Agility}} {{roll=[[d100]]}} {{chance=@{ag|max}}}" class="sheet-mzabj1">Chance</button>
+  <button type="roll" name="roll_ag_max" value="&amp;{template:TLBskillRoll} {{name=@{character-name}}} {{skill=Agility}} {{roll=[[d100cs&lt;3cf&gt;99&lt;/FieldGroup&gt;]]}} {{chance=@{ag|max}}} {{note=?{Note}}}" class="sheet-mzabj1">Chance</button>
 </label>
 </div>
   <div class="sheet-19fodwe">
@@ -81,25 +81,25 @@
 </label>
   <label style="width:50%; " class="sheet-mzabj1   sheet-right">
   <input type="text" name="attr_sm_max" value=""  autocomplete="new-password" class="sheet-mzabj1">
-  <button type="roll" name="roll_sm_max" value="&amp;{template:TLBskillRoll} {{skill=Stamina}} {{roll=[[d100]]}} {{chance=@{sm|max}}}" class="sheet-mzabj1">Chance</button>
+  <button type="roll" name="roll_sm_max" value="&amp;{template:TLBskillRoll} {{name=@{character-name}}} {{skill=Stamina}} {{roll=[[d100cs&lt;3cf&gt;99&lt;/FieldGroup&gt;]]}} {{chance=@{sm|max}}} {{note=?{Note}}}" class="sheet-mzabj1">Chance</button>
 </label>
 </div>
 
   <h3>Derived Stats:</h3>
   <label style="width:100%" class="sheet-1wjbjkl">
-  <button type="roll" name="roll_stun" value="&amp;{template:TLBskillRoll} {{skill=Stun}} {{roll=[[d100]]}} {{chance=@{stun}}}" class="sheet-1wjbjkl">
+  <button type="roll" name="roll_stun" value="&amp;{template:TLBskillRoll} {{name=@{character-name}}} {{skill=Stun}} {{roll=[[d100cs&lt;3cf&gt;99]]}} {{chance=@{stun}}} {{note=?{Note}}}" class="sheet-1wjbjkl">
       Stun
     </button>
   <input type="text" name="attr_stun" value="" autocomplete="false" class="sheet-1wjbjkl">
 </label>
   <label style="width:100%" class="sheet-1wjbjkl">
-  <button type="roll" name="roll_con" value="&amp;{template:TLBskillRoll} {{skill=Con.}} {{roll=[[d100]]}} {{chance=@{con}}}" class="sheet-1wjbjkl">
+  <button type="roll" name="roll_con" value="&amp;{template:TLBskillRoll} {{name=@{character-name}}} {{skill=Con.}} {{roll=[[d100cs&lt;3cf&gt;99]]}} {{chance=@{con}}} {{note=?{Note}}}" class="sheet-1wjbjkl">
       Con.
     </button>
   <input type="text" name="attr_con" value="" autocomplete="false" class="sheet-1wjbjkl">
 </label>
   <label style="width:100%" class="sheet-1wjbjkl">
-  <button type="roll" name="roll_react" value="&amp;{template:TLBskillRoll} {{skill=Reaction}} {{roll=[[d100]]}} {{chance=@{react}}}" class="sheet-1wjbjkl">
+  <button type="roll" name="roll_react" value="&amp;{template:TLBskillRoll} {{name=@{character-name}}} {{skill=Reaction}} {{roll=[[d100cs&lt;3cf&gt;99]]}} {{chance=@{react}}} {{note=?{Note}}}" class="sheet-1wjbjkl">
       Reaction
     </button>
   <input type="text" name="attr_react" value="" autocomplete="false" class="sheet-1wjbjkl">
@@ -335,7 +335,7 @@
     <input type="text" name="attr_skill-parent" value="" autocomplete="new-password" class="sheet-hgmd0u">
     <input type="text" name="attr_skill-diff" value="" autocomplete="new-password" class="sheet-hgmd0u">
     <input type="text" name="attr_skill-chance" value="" autocomplete="new-password" class="sheet-hgmd0u">
-    <button type="roll" name="roll_skill-roll" value="&amp;{template:TLBskillRoll} {{skill=@{skill-name}}} {{roll=[[d100]]}} {{chance=@{skill-chance}}}" class="sheet-hgmd0u"></button>
+    <button type="roll" name="roll_skill-roll" value="&amp;{template:TLBskillRoll} {{name=@{character-name}}} {{skill=@{skill-name}}} {{roll=[[d100cs&lt;3cf&gt;99]]}} {{chance=@{skill-chance}}} {{note=?{Note}}}" class="sheet-hgmd0u"></button>
     <div class="sheet-drawer null">
     
       <textarea name="attr_skill-desc" rows="3" class="sheet-hgmd0u"></textarea>
@@ -428,6 +428,14 @@
     <input type="text" name="attr_technique-parent" value="" autocomplete="new-password" class="sheet-hgmd0u">
     <input type="text" name="attr_technique-vigor" value="" autocomplete="new-password" class="sheet-hgmd0u">
     <input type="text" name="attr_technique-lapse" value="" autocomplete="new-password" class="sheet-hgmd0u">
+    <div class="sheet-drawer sheet-movebuttons">
+    
+      <button type="roll" name="roll_technique-attackroll" value="@{technique-attackmacro}" class="sheet-hgmd0u">Use Technique</button>
+      <button type="roll" name="roll_technique-damageroll" value="@{technique-damagemacro}" class="sheet-hgmd0u">Roll Damage</button>
+      <input type="hidden" name="attr_technique-attackmacro" value="">
+      <input type="hidden" name="attr_technique-damagemacro" value="">
+    
+  </div>
     <div class="sheet-drawer null">
     
       <textarea name="attr_technique-desc" rows="3" class="sheet-hgmd0u"></textarea>
@@ -472,6 +480,14 @@
     <input type="text" name="attr_prayer-parent" value="" autocomplete="new-password" class="sheet-hgmd0u">
     <input type="text" name="attr_prayer-cost" value="" autocomplete="new-password" class="sheet-hgmd0u">
     <input type="text" name="attr_prayer-act" value="" autocomplete="new-password" class="sheet-hgmd0u">
+    <div class="sheet-drawer sheet-movebuttons">
+    
+      <button type="roll" name="roll_prayer-attackroll" value="@{prayer-attackmacro}" class="sheet-hgmd0u">Use Ability</button>
+      <button type="roll" name="roll_prayer-damageroll" value="@{prayer-damagemacro}" class="sheet-hgmd0u">Roll Damage</button>
+      <input type="hidden" name="attr_prayer-attackmacro" value="">
+      <input type="hidden" name="attr_prayer-damagemacro" value="">
+    
+  </div>
     <div class="sheet-drawer null">
     
       <textarea name="attr_prayer-desc" rows="3" class="sheet-hgmd0u"></textarea>
@@ -752,7 +768,7 @@
 </label>
   <label style="width:33.333333333333336%; " class="sheet-mzabj1   sheet-right">
   <input type="text" name="attr_swing" value=""  autocomplete="new-password" class="sheet-mzabj1">
-  <button type="roll" name="roll_swing" value="&amp;{template:TLBattackRoll} {{move=Swing}} {{roll=[[2d6+@{swing}+(?{Modifier|+0})]]}}" class="sheet-mzabj1">Rat.</button>
+  <button type="roll" name="roll_swing" value="&amp;{template:TLBattackRoll} {{name=@{character-name}}} {{move=Swing}} {{attack=[[2d6+(@{swing})+(?{Attack modifier|+0})]]}} {{note=?{Note}}}" class="sheet-mzabj1">Rat.</button>
 </label>
 </div>
   <div class="sheet-ys69e9">
@@ -767,7 +783,7 @@
 </label>
   <label style="width:33.333333333333336%; " class="sheet-mzabj1   sheet-right">
   <input type="text" name="attr_thrust" value=""  autocomplete="new-password" class="sheet-mzabj1">
-  <button type="roll" name="roll_thrust" value="&amp;{template:TLBattackRoll} {{move=Thrust}} {{roll=[[2d6+@{thrust}+(?{Modifier|+0})]]}}" class="sheet-mzabj1">Rat.</button>
+  <button type="roll" name="roll_thrust" value="&amp;{template:TLBattackRoll} {{name=@{character-name}}} {{move=Thrust}} {{attack=[[2d6+(@{thrust})+(?{Attack modifier|+0})]]}} {{note=?{Note}}}" class="sheet-mzabj1">Rat.</button>
 </label>
 </div>
   <div class="sheet-ys69e9">
@@ -782,7 +798,7 @@
 </label>
   <label style="width:33.333333333333336%; " class="sheet-mzabj1   sheet-right">
   <input type="text" name="attr_throw" value=""  autocomplete="new-password" class="sheet-mzabj1">
-  <button type="roll" name="roll_throw" value="&amp;{template:TLBattackRoll} {{move=Throw}} {{roll=[[2d6+@{throw}+(?{Modifier|+0})]]}}" class="sheet-mzabj1">Rat.</button>
+  <button type="roll" name="roll_throw" value="&amp;{template:TLBattackRoll} {{name=@{character-name}}} {{move=Throw}} {{attack=[[2d6+(@{throw})+(?{Attack modifier|+0})]]}} {{note=?{Note}}}" class="sheet-mzabj1">Rat.</button>
 </label>
 </div>
   <div class="sheet-ys69e9">
@@ -797,7 +813,7 @@
 </label>
   <label style="width:33.333333333333336%; " class="sheet-mzabj1   sheet-right">
   <input type="text" name="attr_shoot" value=""  autocomplete="new-password" class="sheet-mzabj1">
-  <button type="roll" name="roll_shoot" value="&amp;{template:TLBattackRoll} {{move=Shoot}} {{roll=[[2d6+@{shoot}+(?{Modifier|+0})]]}}" class="sheet-mzabj1">Rat.</button>
+  <button type="roll" name="roll_shoot" value="&amp;{template:TLBattackRoll} {{name=@{character-name}}} {{move=Shoot}} {{attack=[[2d6+(@{shoot})+(?{Attack modifier|+0})]]}} {{note=?{Note}}}" class="sheet-mzabj1">Rat.</button>
 </label>
 </div>
   <div class="sheet-ys69e9">
@@ -812,7 +828,7 @@
 </label>
   <label style="width:33.333333333333336%; " class="sheet-mzabj1   sheet-right">
   <input type="text" name="attr_parry" value=""  autocomplete="new-password" class="sheet-mzabj1">
-  <button type="roll" name="roll_parry" value="&amp;{template:TLBattackRoll} {{move=Parry}} {{roll=[[2d6+@{parry}+(?{Modifier|+0})]]}}" class="sheet-mzabj1">Rat.</button>
+  <button type="roll" name="roll_parry" value="&amp;{template:TLBattackRoll} {{name=@{character-name}}} {{move=Parry}} {{defense=[[2d6+(@{parry})+(?{Defense modifier|+0})]]}} {{note=?{Note}}}" class="sheet-mzabj1">Rat.</button>
 </label>
 </div>
   <div class="sheet-ys69e9">
@@ -827,7 +843,7 @@
 </label>
   <label style="width:33.333333333333336%; " class="sheet-mzabj1   sheet-right">
   <input type="text" name="attr_block" value=""  autocomplete="new-password" class="sheet-mzabj1">
-  <button type="roll" name="roll_block" value="&amp;{template:TLBattackRoll} {{move=Block}} {{roll=[[2d6+@{block}+(?{Modifier|+0})]]}}" class="sheet-mzabj1">Rat.</button>
+  <button type="roll" name="roll_block" value="&amp;{template:TLBattackRoll} {{name=@{character-name}}} {{move=Block}} {{defense=[[2d6+(@{block})+(?{Defense modifier|+0})]]}} {{note=?{Note}}}" class="sheet-mzabj1">Rat.</button>
 </label>
 </div>
   <div class="sheet-ys69e9">
@@ -842,7 +858,7 @@
 </label>
   <label style="width:33.333333333333336%; " class="sheet-mzabj1   sheet-right">
   <input type="text" name="attr_evade" value=""  autocomplete="new-password" class="sheet-mzabj1">
-  <button type="roll" name="roll_evade" value="&amp;{template:TLBattackRoll} {{move=Evade}} {{roll=[[2d6+@{evade}+(?{Modifier|+0})]]}}" class="sheet-mzabj1">Rat.</button>
+  <button type="roll" name="roll_evade" value="&amp;{template:TLBattackRoll} {{name=@{character-name}}} {{move=Evade}} {{defense=[[2d6+(@{evade})+(?{Defense modifier|+0})]]}} {{note=?{Note}}}" class="sheet-mzabj1">Rat.</button>
 </label>
 </div>
 
@@ -941,7 +957,7 @@
       <textarea name="attr_item-desc" rows="3" class="sheet-hgmd0u"></textarea>
       <ul>
         <li>
-    <input class="sheet-toggle sheet-small" type="checkbox" name="attr_otheritems-header-toggle" value="checked" >
+    <input class="sheet-toggle sheet-small" type="checkbox" name="attr_partyitems-header-toggle" value="checked" >
     <span>Mark as header</span>
   </li>
       </ul>
@@ -961,56 +977,164 @@
 </div>
 
 
-<rolltemplate class="sheet-rolltemplate-TLBattackRoll">
-  <h3>Combat roll</h3>
-  <div>
+<div class="sheet-12w2t4">
+  <rolltemplate class="sheet-rolltemplate-TLBskillRoll">
+  <div class="sheet-rollbox">
     
-  <div class="sheet-roll">
-    {{#item}}
-    <div class="sheet-top">
-      <span class="sheet-result">{{item}}</span>
-    </div>
-    {{/item}} {{#roll}}
-    <div class="sheet-item">
-      <span class="sheet-result">{{roll}}</span>
-      <span class="sheet-label">{{move}}</span>
-    </div>
-    {{/roll}} {{#damage}}
-    <div class="sheet-item">
-      <span class="sheet-result">
-        {{damage}}
-        <span>{{type}}</span>
-      </span>
-      <span class="sheet-label">Damage</span>
-    </div>
-    {{/damage}}
+  <div class="sheet-rollheader">
+    <p class="sheet-rollprelude">
+      <em>{{name}}</em>
+      checks
+      <span class="sheet-rolltitle">{{skill}}</span>
+    </p>
+  </div>
+  <div class="sheet-rollcontent">
+    <span class="sheet-rolltype">Skill Roll:</span>
+    <span class="sheet-rolloutput">
+      <span class="sheet-rollresult">{{roll}}%</span>
+      vs. {{chance}}% {{#rollLess() roll 3}}
+      <span class="sheet-rollcrit">Critical Success!</span>
+      {{/rollLess() roll 3}} {{#rollTotal() roll 99}}
+      <span class="sheet-rollfail">Auto Failure</span>
+      {{/rollTotal() roll 99}} {{#rollTotal() roll 100}}
+      <span class="sheet-rollfumble">Critical Failure!</span>
+      {{/rollTotal() roll 100}}
+    </span>
+    {{#note}}
+    <hr>
+    <span class="sheet-rollnote">{{note}}</span>
+    {{/note}}
+  </div>
+
+  </div>
+</rolltemplate>
+  <rolltemplate class="sheet-rolltemplate-TLBabilityRoll">
+  <div class="sheet-rollbox">
+    
+  <div class="sheet-rollheader">
+    <p class="sheet-rollprelude">
+      <em>{{name}}</em>
+      uses
+      <span class="sheet-rolltitle">{{title}}</span>
+    </p>
+  </div>
+  <div class="sheet-rollcontent">
+    <span class="sheet-rolltype">{{skill}} Roll:</span>
+    <span class="sheet-rolloutput">
+      <span class="sheet-rollresult">{{roll}}%</span>
+      vs. {{chance}}% {{#rollLess() roll 3}}
+      <span class="sheet-rollcrit">Critical Success!</span>
+      {{/rollLess() roll 3}} {{#rollTotal() roll 99}}
+      <span class="sheet-rollfail">Auto Failure</span>
+      {{/rollTotal() roll 99}} {{#rollTotal() roll 100}}
+      <span class="sheet-rollfumble">Critical Failure!</span>
+      {{/rollTotal() roll 100}}
+    </span>
+    {{#note}}
+    <hr>
+    <span class="sheet-rollnote">{{note}}</span>
+    {{/note}}
+  </div>
+
+  </div>
+</rolltemplate>
+  <rolltemplate class="sheet-rolltemplate-TLBattackRoll">
+  <div class="sheet-rollbox">
+    
+  <div class="sheet-rollheader">
+    <p class="sheet-rollprelude">
+      <em>{{name}}</em>
+      {{#attack}}attacks{{/attack}}{{#defense}}defends{{/defense}}
+      {{#weapon}} with their
+      <em>{{weapon}}</em>
+      {{/weapon}}{{#weapon2}} then their
+      <em>{{weapon2}}</em>
+      {{/weapon2}}{{#weapon3}} then their
+      <em>{{weapon3}}</em>
+      {{/weapon3}} using
+      <span class="sheet-rolltitle">{{move}}</span>
+    </p>
+  </div>
+  <div class="sheet-rollcontent">
+    <span class="sheet-rolltype">
+      {{#attack}}Attack{{/attack}}{{#defense}}Defense{{/defense}}
+      Roll:
+    </span>
+    <span class="sheet-rolloutput">
+      {{#attack}}
+        <span class="sheet-rollresult">{{attack}}</span>
+        {{/attack}}{{#attack2}}
+        <span class="sheet-rollresult">{{attack2}}</span>
+        {{/attack2}}{{#attack3}}
+        <span class="sheet-rollresult">{{attack3}}</span>
+        {{/attack3}}{{#attack4}}
+        <span class="sheet-rollresult">{{attack4}}</span>
+        {{/attack4}}{{#attack5}}
+        <span class="sheet-rollresult">{{attack5}}</span>
+        {{/attack5}}
+
+      {{#defense}}
+        <span class="sheet-rollresult">{{defense}}</span>
+        {{/defense}}{{#defense2}}
+        <span class="sheet-rollresult">{{defense2}}</span>
+        {{/defense2}}{{#defense3}}
+        <span class="sheet-rollresult">{{defense3}}</span>
+        {{/defense3}}{{#defense4}}
+        <span class="sheet-rollresult">{{defense4}}</span>
+        {{/defense4}}{{#defense5}}
+        <span class="sheet-rollresult">{{defense5}}</span>
+        {{/defense5}}
+      {{#attack}}Strike{{/attack}}{{#defense}}Defense{{/defense}}
+    </span>
+    {{#note}}
+    <hr>
+    <span class="sheet-rollnote">{{note}}</span>
+    {{/note}}
+  </div>
+
+  </div>
+</rolltemplate>
+  <rolltemplate class="sheet-rolltemplate-TLBdamageRoll">
+  <div class="sheet-rollbox">
+    
+  <div class="sheet-rollheader">
+    <p class="sheet-rollprelude">
+      <em>{{name}}</em>
+      hits {{#weapon}} with their
+      <em>{{weapon}}</em>
+      {{/weapon}}{{#weapon2}} then their
+      <em>{{weapon2}}</em>
+      {{/weapon2}}{{#weapon3}} then their
+      <em>{{weapon3}}</em>
+      {{/weapon3}}
+    </p>
+  </div>
+  <div class="sheet-rollcontent">
+    <span class="sheet-rolltype">Damage Roll:</span>
+    <span class="sheet-rolloutput">
+      {{#damage}}
+        <span class="sheet-rollresult">{{damage}}</span>
+        {{/damage}}{{#damage2}}
+        <span class="sheet-rollresult">{{damage2}}</span>
+        {{/damage2}}{{#damage3}}
+        <span class="sheet-rollresult">{{damage3}}</span>
+        {{/damage3}}{{#damage4}}
+        <span class="sheet-rollresult">{{damage4}}</span>
+        {{/damage4}}{{#damage5}}
+        <span class="sheet-rollresult">{{damage5}}</span>
+        {{/damage5}}
+      {{type}}
+    </span>
+    {{#note}}
+    <hr>
+    <span class="sheet-rollnote">{{note}}</span>
+    {{/note}}
   </div>
 
   </div>
 </rolltemplate>
 
-<rolltemplate class="sheet-rolltemplate-TLBskillRoll">
-  <h3>Skill roll</h3>
-  <div>
-    
-  <div class="sheet-roll">
-    {{#skill}}
-    <div class="sheet-top">
-      <span class="sheet-result">{{skill}}</span>
-    </div>
-    {{/skill}} {{#roll}}
-    <div class="sheet-item">
-      <span class="sheet-result">
-        {{roll}}%
-        <span>vs. {{chance}}%</span>
-      </span>
-      <span class="sheet-label">Rating</span>
-    </div>
-    {{/roll}}
-  </div>
-
-  </div>
-</rolltemplate>
+</div>
 
 <script type="text/worker">class AmbientSheetWorkers {
   /* --------------------------------------------------------------------------
@@ -1341,7 +1465,10 @@
                               e,
                               version: this.version,
                               attrSet,
-                              fieldSet: this.util.parseValues(values).fieldSet,
+                              fieldSet: Object.assign(
+                                fieldSet,
+                                this.util.parseValues(values).fieldSet
+                              ),
                               setAttrs: _.partial(this.toolbox.setAttrs)
                             })();
                           }
@@ -1448,14 +1575,17 @@
   }
 }
 
-sheet = new AmbientSheetWorkers("1.2.0");
+sheet = new AmbientSheetWorkers("1.2.1");
 
 sheet
   .listen("sheet:opened")
   .getAttrs(["sheet_ver", "character_name"])
   .tap(({ version, attrSet, setAttrs }) => {
     let ver = attrSet.sheet_ver;
-    if (ver && ver != "") return false;
+    if (ver && ver != "") {
+      setAttrs({ ["sheet_ver"]: version });
+      return false;
+    }
 
     setAttrs(
       {
@@ -1473,6 +1603,68 @@ sheet
         console.log("New character created! Have fun!");
       }
     );
+  })
+  .run();
+
+sheet
+  .listen("change:technique-name", "techniques")
+  .getAttrs("character_name")
+  .getFields(["technique-name"], "techniques")
+  .tap(({ attrSet, fieldSet, setAttrs }) => {
+    console.log(attrSet);
+    let charName = attrSet["character_name"];
+    let techName = fieldSet.techniques["technique-name"];
+    let attackMacro = `&{template:TLBattackRoll} {{name=@{character-name}}} {{move=${techName}}} %{${charName}|Move--${techName.replace(
+      /\s/g,
+      "-"
+    )}}`;
+    let damageMacro = `&{template:TLBdamageRoll} {{name=@{character-name}}} %{${charName}|Move--${techName.replace(
+      /\s/g,
+      "-"
+    )}--Damage}`;
+
+    let result = {};
+    result["technique-attackmacro"] = attackMacro;
+    result["technique-damagemacro"] = damageMacro;
+
+    setAttrs(result, "weapons", () => {
+      console.log("Technique 'Attack,' and 'Damage' macros updated");
+    });
+  })
+  .run();
+
+sheet
+  .listen("change:prayer-name", "prayers")
+  .getAttrs("character_name")
+  .getFields(["prayer-name", "prayer-parent"], "prayers")
+  .getFields(["skill-name", "skill-chance"], "skills")
+  .tap("skills", ({ attrSet, fieldSet, setAttrs }) => {
+    console.log(fieldSet);
+    let charName = attrSet["character_name"];
+    let prayerName = fieldSet.prayers["prayer-name"];
+    let parent = fieldSet.prayers["prayer-parent"];
+    let chance = fieldSet.skills
+      .map(skill => {
+        if (skill["skill-name"] === parent) return skill["skill-chance"];
+        return false;
+      })
+      .filter(skill => skill);
+    let attackMacro = `&{template:TLBabilityRoll} {{name=@{character-name}}} {{title=${prayerName}}} {{skill=${parent}}} {{chance=${chance}}} {{roll=[[d100cs<3cf>99]]}} %{${charName}|Move--${prayerName.replace(
+      /\s/g,
+      "-"
+    )}}`;
+    let damageMacro = `&{template:TLBdamageRoll} {{name=@{character-name}}} %{${charName}|Move--${prayerName.replace(
+      /\s/g,
+      "-"
+    )}--Damage}`;
+
+    let result = {};
+    result["prayer-attackmacro"] = attackMacro;
+    result["prayer-damagemacro"] = damageMacro;
+
+    setAttrs(result, "weapons", () => {
+      console.log("Technique 'Attack,' and 'Damage' macros updated");
+    });
   })
   .run();
 
@@ -1543,31 +1735,29 @@ sheet
   .listen("change:weapon-type", "weapons")
   .getFields("weapon-type", "weapons")
   .tap(({ fieldSet, setAttrs }) => {
-    console.log("fieldSet", fieldSet);
     let weaponType = fieldSet.weapons["weapon-type"];
-
     let attackMacro = "";
     let defenseMacro = "";
     let damageMacro = "";
     if (weaponType === "melee") {
-      attackMacro = `&{template:TLBattackRoll} {{item=@{weapon-name}}} ?{Maneuver
-      |Swing,{{move=Swing&#125;&#125; {{roll=[[2d6+(@{swing})+(@{weapon-swing})+(@{weapon-offhand-toggle})+(?{Attack modifier&#124;+0&#125;)]]&#125;&#125;
-      |Thrust,{{move=Thrust&#125;&#125; {{roll=[[2d6+(@{thrust})+(@{weapon-thrust})+(@{weapon-offhand-toggle})+(?{Attack modifier&#124;+0&#125;)]]&#125;&#125;
-      |Throw,{{move=Throw&#125;&#125; {{roll=[[2d6+(@{throw})+(@{weapon-throw})+(@{weapon-offhand-toggle})+(?{Attack modifier&#124;+0&#125;)]]&#125;&#125;}`;
-      defenseMacro = `&{template:TLBattackRoll} {{item=@{weapon-name}}} ?{Maneuver
-        |Parry,{{move=Parry&#125;&#125; {{roll=[[2d6+(@{parry})+(@{weapon-parry})+(@{weapon-offhand-toggle})+(?{Defense modifier&#124;+0&#125;)]]&#125;&#125;
-        |Block,{{move=Block&#125;&#125; {{roll=[[2d6+(@{block})+(@{weapon-block})+(@{weapon-offhand-toggle})+(?{Defense modifier&#124;+0&#125;)]]&#125;&#125;}`;
-      damageMacro = `&{template:TLBattackRoll} {{item=@{weapon-name}}} {{damage=?{Damage type
+      attackMacro = `&{template:TLBattackRoll} {{name=@{character-name}}} {{weapon=@{weapon-name}}} {{note=?{Note}}} ?{Maneuver
+      |Swing,{{move=Swing&#125;&#125; {{attack=[[2d6+(@{swing})+(@{weapon-swing})+(@{weapon-offhand-toggle})+(?{Attack modifier&#124;+0&#125;)]]&#125;&#125;
+      |Thrust,{{move=Thrust&#125;&#125; {{attack=[[2d6+(@{thrust})+(@{weapon-thrust})+(@{weapon-offhand-toggle})+(?{Attack modifier&#124;+0&#125;)]]&#125;&#125;
+      |Throw,{{move=Throw&#125;&#125; {{attack=[[2d6+(@{throw})+(@{weapon-throw})+(@{weapon-offhand-toggle})+(?{Attack modifier&#124;+0&#125;)]]&#125;&#125;}`;
+      defenseMacro = `&{template:TLBattackRoll} {{name=@{character-name}}} {{weapon=@{weapon-name}}} {{note=?{Note}}} ?{Maneuver
+        |Parry,{{move=Parry&#125;&#125; {{defense=[[2d6+(@{parry})+(@{weapon-parry})+(@{weapon-offhand-toggle})+(?{Defense modifier&#124;+0&#125;)]]&#125;&#125;
+        |Block,{{move=Block&#125;&#125; {{defense=[[2d6+(@{block})+(@{weapon-block})+(@{weapon-offhand-toggle})+(?{Defense modifier&#124;+0&#125;)]]&#125;&#125;}`;
+      damageMacro = `&{template:TLBdamageRoll} {{name=@{character-name}}} {{weapon=@{weapon-name}}} {{note=?{Note}}} {{damage=?{Damage type
         |@{weapon-damage1},[[@{weapon-damage1|max}+(?{Damage modifier&#124;+0&#125;)]]&#125;&#125;  {{type=@{weapon-damage1}&#125;&#125;
         |@{weapon-damage2},[[@{weapon-damage2|max}+(?{Damage modifier&#124;+0&#125;)]]&#125;&#125; {{type=@{weapon-damage2}&#125;&#125;
         |@{weapon-damage3},[[@{weapon-damage3|max}+(?{Damage modifier&#124;+0&#125;)]]&#125;&#125; {{type=@{weapon-damage3}&#125;&#125;}`;
     }
     if (weaponType === "ranged") {
-      attackMacro = `&{template:TLBattackRoll} {{item=@{weapon-name}}} {{move=Shoot}} {{roll=[[2d6+(@{shoot})+(@{weapon-shoot})+(?{Aimed|No,+0|Yes,@{weapon-acc}})+(?{Attack modifier|+0})]]}}`;
-      damageMacro = `&{template:TLBattackRoll} {{item=@{weapon-name}}} {{type=Pierce}} {{damage=[[@{weapon-damage1|max}+(?{Damage modifier|+0})]]}}`;
+      attackMacro = `&{template:TLBattackRoll} {{name=@{character-name}}} {{weapon=@{weapon-name}}} {{move=Shoot}} {{attack=[[2d6+(@{shoot})+(@{weapon-shoot})+(?{Aimed|No,+0|Yes,@{weapon-acc}})+(?{Attack modifier|+0})]]}} {{note=?{Note}}}`;
+      damageMacro = `&{template:TLBdamageRoll} {{name=@{character-name}}} {{weapon=@{weapon-name}}} {{type=Pierce}} {{damage=[[@{weapon-damage1|max}+(?{Damage modifier|+0})]]}} {{note=?{Note}}}`;
     }
     if (weaponType === "shield") {
-      defenseMacro = `&{template:TLBattackRoll} {{item=@{weapon-name}}} {{move=Block}} {{roll=[[2d6+(@{block})+(@{weapon-block})+(?{Defense modifier|+0})]]}}`;
+      defenseMacro = `&{template:TLBattackRoll} {{name=@{character-name}}} {{weapon=@{weapon-name}}} {{move=Block}} {{defense=[[2d6+(@{block})+(@{weapon-block})+(?{Defense modifier|+0})]]}} {{note=?{Note}}}`;
     }
 
     let result = {};
