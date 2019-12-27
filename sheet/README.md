@@ -28,7 +28,7 @@ In order for the macro buttons for your Techniques and Prayer to work, you'll ha
 
 Go to the abilities list (right-hand side) and click the "+ Add" button at the top. This will create a new ability macro named "New Ability 0." Enter edit mode by hovering over the ability and clicking the small pencil icon to the right. This will convert the name into a text box and a larger textarea below it. This is where you will enter your macro.
 
-First, change the ability name to `Move--<Technique-or-Prayer-Name>`. Replace _<Technique-or-Prayer-Name>_ with the name you entered as the name of your Technique or Prayer. Replace any spaces in the name with dashes. For example, if your Technique is called "_Plunging Stabs_" name your macro "_Move--Plunging-Stabs_" (Note: capitalization is important).
+First, change the ability name to `Move--<Technique-or-Prayer-Name>` (or `Move--<Technique-or-Prayer-Name>--Damage` for the 'Roll Damage' button). Replace _<Technique-or-Prayer-Name>_ with the name you entered as the name of your Technique or Prayer. Replace any spaces in the name with dashes. For example, if your Technique is called "_Plunging Stabs_" name your macros "_Move--Plunging-Stabs_" and "_Move--Plunging-Stabs--Damage_" (Note: capitalization is important).
 
 Next, enter your macro in the textarea. There are several fields you can use. Enter them as a set of double curly brackets containing the field's name followed by an equals sign and the fields contents (i.e. `{{<fieldname>=...}}`):
 
