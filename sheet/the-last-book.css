@@ -1254,10 +1254,6 @@ h3.sheet-ys69e9::first-letter {
 .sheet-partyitemstable .repcontrol .btn::after {
   content: " Item";
 }
-div.sheet-12w2t4 {
-  width: 230px;
-  border: 1px dashed firebrick;
-}
 .sheet-rolltemplate-TLBskillRoll .sheet-rollbox,
 .sheet-rolltemplate-TLBabilityRoll .sheet-rollbox,
 .sheet-rolltemplate-TLBattackRoll .sheet-rollbox,
