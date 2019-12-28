@@ -344,6 +344,9 @@
     <input class="sheet-toggle sheet-small" type="checkbox" name="attr_skill-skillset-toggle" value="checked" >
     <span>Mark as skillset</span>
   </li>
+        <li class="sheet-id" title="Copy this ID to reference this skill when writing macros">
+          <span name="attr_skill-id">...</span>
+        </li>
       </ul>
     
   </div>
@@ -444,6 +447,9 @@
     <input class="sheet-toggle sheet-small" type="checkbox" name="attr_technique-header-toggle" value="checked" >
     <span>Mark as header</span>
   </li>
+        <li class="sheet-id" title="Copy this ID to reference this technique when writing macros">
+          <span name="attr_technique-id">...</span>
+        </li>
       </ul>
     
   </div>
@@ -496,6 +502,9 @@
     <input class="sheet-toggle sheet-small" type="checkbox" name="attr_prayer-header-toggle" value="checked" >
     <span>Mark as header</span>
   </li>
+        <li class="sheet-id" title="Copy this ID to reference this prayer when writing macros">
+          <span name="attr_prayer-id">...</span>
+        </li>
       </ul>
     
   </div>
@@ -634,6 +643,9 @@
     <input class="sheet-toggle sheet-small" type="checkbox" name="attr_weapon-offhand-toggle" value="-2" >
     <span>Mark as an &#39;off-hand&#39; weapon</span>
   </li>
+        <li class="sheet-id" title="Copy this ID to reference this weapon when writing macros">
+          <span name="attr_weapon-id">...</span>
+        </li>
       </ul>
     
   </div>
@@ -650,7 +662,7 @@
   <fieldset class="repeating_items">
       <div class="sheet-tablerow">
         
-    <input class="sheet-toggle " type="hidden" name="attr_items-header-toggle">
+    <input class="sheet-toggle " type="hidden" name="attr_item-header-toggle">
     <input class="sheet-toggle" type="checkbox" name="attr_item-toggle" value="checked" >
   <span></span>
     <input type="text" name="attr_item-name" value="" autocomplete="new-password" class="sheet-hgmd0u">
@@ -661,7 +673,7 @@
       <textarea name="attr_item-desc" rows="3" class="sheet-hgmd0u"></textarea>
       <ul>
         <li>
-    <input class="sheet-toggle sheet-small" type="checkbox" name="attr_items-header-toggle" value="checked" >
+    <input class="sheet-toggle sheet-small" type="checkbox" name="attr_item-header-toggle" value="checked" >
     <span>Mark as header</span>
   </li>
       </ul>
@@ -711,7 +723,7 @@
   <fieldset class="repeating_otheritems">
       <div class="sheet-tablerow">
         
-    <input class="sheet-toggle " type="hidden" name="attr_otheritems-header-toggle">
+    <input class="sheet-toggle " type="hidden" name="attr_item-header-toggle">
     <input class="sheet-toggle" type="checkbox" name="attr_item-toggle" value="checked" >
   <span></span>
     <input type="text" name="attr_item-name" value="" autocomplete="new-password" class="sheet-hgmd0u">
@@ -722,7 +734,7 @@
       <textarea name="attr_item-desc" rows="3" class="sheet-hgmd0u"></textarea>
       <ul>
         <li>
-    <input class="sheet-toggle sheet-small" type="checkbox" name="attr_otheritems-header-toggle" value="checked" >
+    <input class="sheet-toggle sheet-small" type="checkbox" name="attr_item-header-toggle" value="checked" >
     <span>Mark as header</span>
   </li>
       </ul>
@@ -770,6 +782,7 @@
   <input type="text" name="attr_swing" value=""  autocomplete="new-password" class="sheet-mzabj1">
   <button type="roll" name="roll_swing" value="&amp;{template:TLBattackRoll} {{name=@{character-name}}} {{move=Swing}} {{attack=[[2d6+(@{swing})+(?{Attack modifier|+0})]]}} {{note=?{Note}}}" class="sheet-mzabj1">Rat.</button>
 </label>
+
 </div>
   <div class="sheet-ys69e9">
   <h3 class="sheet-ys69e9">Thrust:</h3>
@@ -785,6 +798,7 @@
   <input type="text" name="attr_thrust" value=""  autocomplete="new-password" class="sheet-mzabj1">
   <button type="roll" name="roll_thrust" value="&amp;{template:TLBattackRoll} {{name=@{character-name}}} {{move=Thrust}} {{attack=[[2d6+(@{thrust})+(?{Attack modifier|+0})]]}} {{note=?{Note}}}" class="sheet-mzabj1">Rat.</button>
 </label>
+
 </div>
   <div class="sheet-ys69e9">
   <h3 class="sheet-ys69e9">Throw:</h3>
@@ -800,6 +814,7 @@
   <input type="text" name="attr_throw" value=""  autocomplete="new-password" class="sheet-mzabj1">
   <button type="roll" name="roll_throw" value="&amp;{template:TLBattackRoll} {{name=@{character-name}}} {{move=Throw}} {{attack=[[2d6+(@{throw})+(?{Attack modifier|+0})]]}} {{note=?{Note}}}" class="sheet-mzabj1">Rat.</button>
 </label>
+
 </div>
   <div class="sheet-ys69e9">
   <h3 class="sheet-ys69e9">Shoot:</h3>
@@ -815,6 +830,7 @@
   <input type="text" name="attr_shoot" value=""  autocomplete="new-password" class="sheet-mzabj1">
   <button type="roll" name="roll_shoot" value="&amp;{template:TLBattackRoll} {{name=@{character-name}}} {{move=Shoot}} {{attack=[[2d6+(@{shoot})+(?{Attack modifier|+0})]]}} {{note=?{Note}}}" class="sheet-mzabj1">Rat.</button>
 </label>
+
 </div>
   <div class="sheet-ys69e9">
   <h3 class="sheet-ys69e9">Parry:</h3>
@@ -830,6 +846,7 @@
   <input type="text" name="attr_parry" value=""  autocomplete="new-password" class="sheet-mzabj1">
   <button type="roll" name="roll_parry" value="&amp;{template:TLBattackRoll} {{name=@{character-name}}} {{move=Parry}} {{defense=[[2d6+(@{parry})+(?{Defense modifier|+0})]]}} {{note=?{Note}}}" class="sheet-mzabj1">Rat.</button>
 </label>
+
 </div>
   <div class="sheet-ys69e9">
   <h3 class="sheet-ys69e9">Block:</h3>
@@ -845,6 +862,7 @@
   <input type="text" name="attr_block" value=""  autocomplete="new-password" class="sheet-mzabj1">
   <button type="roll" name="roll_block" value="&amp;{template:TLBattackRoll} {{name=@{character-name}}} {{move=Block}} {{defense=[[2d6+(@{block})+(?{Defense modifier|+0})]]}} {{note=?{Note}}}" class="sheet-mzabj1">Rat.</button>
 </label>
+
 </div>
   <div class="sheet-ys69e9">
   <h3 class="sheet-ys69e9">Evade:</h3>
@@ -860,6 +878,7 @@
   <input type="text" name="attr_evade" value=""  autocomplete="new-password" class="sheet-mzabj1">
   <button type="roll" name="roll_evade" value="&amp;{template:TLBattackRoll} {{name=@{character-name}}} {{move=Evade}} {{defense=[[2d6+(@{evade})+(?{Defense modifier|+0})]]}} {{note=?{Note}}}" class="sheet-mzabj1">Rat.</button>
 </label>
+
 </div>
 
 </div>
@@ -1575,7 +1594,7 @@
   }
 }
 
-sheet = new AmbientSheetWorkers("1.2.1");
+sheet = new AmbientSheetWorkers("1.2.2");
 
 sheet
   .listen("sheet:opened")
@@ -1605,6 +1624,22 @@ sheet
     );
   })
   .run();
+
+["skill", "technique", "prayer", "weapon"].forEach(tag => {
+  sheet
+    .listen("change", `${tag}s`)
+    .tap(`${tag}s`, ({ e, setAttrs }) => {
+      let match = e.triggerName.match(/_(-[-\d\w]+)$/);
+      let rowId = match[1] || "No row ID found";
+
+      let result = {};
+      result[`${tag}-id`] = rowId;
+      setAttrs(result, `${tag}s`, () => {
+        console.log("Row ID# updated");
+      });
+    })
+    .run();
+});
 
 sheet
   .listen("change:technique-name", "techniques")

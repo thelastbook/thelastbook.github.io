@@ -86,7 +86,9 @@ Common fields include: `iq`, `wl`, `aw`, `st`, `ag`, and `sm` for the core attri
 
 When writing your macros, it might be neccessary to reference a specific skill or weapon in order to grab data from your character sheet. Unfortunately there isn't a way to reference table rows by name. Instead, you must find Roll20's internal reference number for the table row.
 
-To do this, right click on the table entry you're trying to find (using Chrome browser). Go to "Inspect." A panel will apear to the right showing the html of the webpage. The row you clicked on should be highlighted. Look for the row's containing `<div class="repitem">`. It should have an attribute called "_data-reprowid_" with a value that looks something like "_-LwuuZJ6lXxVeEgmZ0FJ_". That is the row id. Copy it for later.
+To make things easier, Skills, Weapons, Techniques, and Prayers all display their row ID. Find it by opening the table entry by clicking the circle icon to the left of the row's name field. You'll see a `</>` symbol followed by a string of letters and numbers in the lower right-hand corner of the card. Click on it to highlight the ID and then copy it using `ctrl+c` or by right clicking and selecting "copy."
+
+If the row IDs aren't displayed for the table you want to reference, right click on the table entry you're trying to find (using Chrome browser). Go to "Inspect." A panel will apear to the right showing the html of the webpage. The row you clicked on should be highlighted. Look for the row's containing `<div class="repitem">`. It should have an attribute called "_data-reprowid_" with a value that looks something like "_-LwuuZJ6lXxVeEgmZ0FJ_". That is the row id. Copy it for later.
 
 #### Referencing Weapons:
 

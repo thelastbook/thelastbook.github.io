@@ -562,6 +562,34 @@ input[type="checkbox"].sheet-small + span::before {
   display: inline-block;
   list-style: none;
 }
+.sheet-tablerow .sheet-drawer ul > li.sheet-id {
+  float: right;
+  width: 75px;
+  vertical-align: middle;
+  font: normal 9px / 1.5 Courier, monospace;
+  color: #aaa;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.sheet-tablerow .sheet-drawer ul > li.sheet-id:hover {
+  color: black;
+}
+.sheet-tablerow .sheet-drawer ul > li.sheet-id span {
+  -webkit-user-select: all;
+  -moz-user-select: all;
+  -ms-user-select: all;
+  user-select: all;
+}
+.sheet-tablerow .sheet-drawer ul > li.sheet-id::before {
+  content: "k";
+  display: inline-block;
+  font-family: "Pictos Three";
+  font-style: normal;
+  font-size: 14px;
+  vertical-align: middle;
+  line-height: 18px;
+}
 .sheet-tablerow .sheet-drawer > textarea {
   padding: 5px;
 }
