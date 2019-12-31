@@ -74,6 +74,80 @@ The `{{weapon=...}}` and `{{note=...}}` fields work the same as inside an _attac
 
 ### Advanced Roll20 Macro Syntax
 
+You can write other macros as well that won't be triggered by buttons on the character sheet. Write them in the abilities list like above, but name them whatever you'd like. To use the same style of output templates used by the sheet macros, write the following into the textarea:
+
+```
+&{template:<templatename>} {{name=@{<charactername>|character-name}}} ...Additional fields go here...
+```
+
+Replace `<templatename>` with "`TLBskillRoll`," "`TLBabilityRoll`," "`TLBattackRoll`," or "`TLBdamageRoll`." Replace `<charactername>` with your character's "short name." You can enter any `{{fields}}` that apply to the type of template you're using, as outlined below:
+
+#### Ability Template Fields (`TLBabilityRoll`):
+
+- `{{title=...}}`: \
+  The name of the ability you are using. This will display in large letters under your name at the top of the output card (i.e. "Taariq uses _Ability_")
+
+- `{{skill=...}}`: \
+  The name of the skill this ability uses. This will display as the heading to your skill roll.
+
+- `{{roll=...}}`: \
+  The inline dice roll formula for your skill, wrapped in double square brackets (`[[...]]`). Use the formula "`[[d100cs<3cf>99]]`" for best results.
+
+- `{{chance=...}}`: \
+  The success chance of the skill this ability uses. You should reference the skill from your character sheet directly using "`@{<charactername>|repeating_skills_<rowid>_skill-chance}`" as explained in the "Referencing Skills" section found below.
+
+- `{{note=...}}` (_optional_): \
+  An optional note or short description to include at the bottom of the output card. It can include more advanced macro logic (see below), such as referencing an additional skill roll.
+
+#### Skill Template Fields (`TLBabilityRoll`):
+
+- `{{skill=...}}`: \
+  The name of the skill this ability uses. This will display in large letters under your name at the top of the output card (i.e. "Taariq checks _Skill_")
+
+- `{{roll=...}}`: \
+  The inline dice roll formula for your skill, wrapped in double square brackets (`[[...]]`). Use the formula "`[[d100cs<3cf>99]]`" for best results.
+
+- `{{chance=...}}`: \
+  The success chance of the skill this ability uses. You should reference the skill from your character sheet directly using "`@{<charactername>|repeating_skills_<rowid>_skill-chance}`" as explained in the "Referencing Skills" section found below.
+
+- `{{note=...}}` (_optional_): \
+  An optional note or short description to include at the bottom of the output card. It can include more advanced macro logic (see below), such as referencing an additional skill roll.
+
+#### Attack Template Fields (`TLBattackRoll`):
+
+- `{{move=...}}`: \
+  The name of the move you are using. This will display in large letters under your name at the top of the output card (i.e. "Taariq attacks using _Move_")
+
+- `{{weapon=...}}` or `{{weaponN=...}}` (_optional_): \
+   The name of the weapon you are using. Replace "N" in the field name with 2-3 if using multiple weapons at once. (Note: You must include a separate weapon field for each weapon). These will display alongside your character name at the top of the output card.
+
+- `{{attack=...}}` or `{{attackN}}`: \
+  The inline dice roll formula for your attack, wrapped in double square brackets (`[[...]]`). Replace "N" in the field name with 2-5 if using multiple attacks at once. (Note: You must include a separate attack field for each attack). These will display under the "Attack Roll" heading, followed by the word "Strike"
+
+  _Note that you shouldn't use both `attack` and `defense` fields at the same time._
+
+- `{{defense=...}}` or `{{defenseN}}`: \
+  The inline dice roll formula for your defense, wrapped in double square brackets (`[[...]]`). Replace "N" in the field name with 2-5 if using multiple defenses at once. (Note: You must include a separate defense field for each defense). These will display under the "Defense Roll" heading, followed by the word "Defense"
+
+  _Note that you shouldn't use both `attack` and `defense` fields at the same time._
+
+- `{{note=...}}` (_optional_): \
+  An optional note or short description to include at the bottom of the output card. It can include more advanced macro logic (see below), such as referencing an additional skill roll.
+
+#### Damage Template Fields (`TLBdamageRoll`):
+
+- `{{weapon=...}}` or `{{weaponN=...}}` (_optional_): \
+   The name of the weapon you are using. Replace "N" in the field name with 2-3 if using multiple weapons at once. (Note: You must include a separate weapon field for each weapon). These will display alongside your character name at the top of the output card.
+
+- `{{damage=...}}` or `{{damageN}}`: \
+  The inline dice roll formula for your damage, wrapped in double square brackets (`[[...]]`). Replace "N" in the field name with 2-5 if using multiple damages at once. (Note: You must include a separate damage field for each damage). These will display under the "Attack Roll" heading, followed by the damage type
+
+- `{{type=...}}`: \
+  The damage type of your weapon(s). Note that only one `type` field is allowed. If multiple damage types are needed, add them together in the same field (i.e. "`{{type=Pierce/Impact`"). This will display after the list of damage results.
+
+- `{{note=...}}` (_optional_): \
+  An optional note or short description to include at the bottom of the output card. It can include more advanced macro logic (see below), such as referencing an additional skill roll.
+
 See [Macros on the Roll20 Wiki](https://wiki.roll20.net/Macros) for help with writing more complex macros.
 
 ### Referencing Sheet Fields directly
