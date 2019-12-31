@@ -74,7 +74,7 @@ The `{{weapon=...}}` and `{{note=...}}` fields work the same as inside an _attac
 
 ### Advanced Roll20 Macro Syntax
 
-You can write other macros as well that won't be triggered by buttons on the character sheet. Write them in the abilities list like above, but name them whatever you'd like. To use the same style of output templates used by the sheet macros, write the following into the textarea:
+You can write other macros as well that won't be triggered by buttons on the character sheet, but that you can use manually. Write them in the abilities list like above, but name them whatever you'd like. To use the same style of output templates used by the sheet macros, write the following into the textarea:
 
 ```
 &{template:<templatename>} {{name=@{<charactername>|character-name}}} ...Additional fields go here...
@@ -99,7 +99,7 @@ Replace `<templatename>` with "`TLBskillRoll`," "`TLBabilityRoll`," "`TLBattackR
 - `{{note=...}}` (_optional_): \
   An optional note or short description to include at the bottom of the output card. It can include more advanced macro logic (see below), such as referencing an additional skill roll.
 
-#### Skill Template Fields (`TLBabilityRoll`):
+#### Skill Template Fields (`TLBskillRoll`):
 
 - `{{skill=...}}`: \
   The name of the skill this ability uses. This will display in large letters under your name at the top of the output card (i.e. "Taariq checks _Skill_")
