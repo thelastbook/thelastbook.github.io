@@ -105,6 +105,10 @@ button[type="roll"]::after {
   grid-column: 4 / span 2;
   grid-row: 2;
 }
+.sheet-sec-notes {
+  grid-column: 3 / span 2;
+  grid-row: 1;
+}
 label.sheet-hgmd0u {
   position: relative;
   margin: 0;
@@ -1180,6 +1184,74 @@ h3.sheet-ys69e9::first-letter {
   border-left: 1px solid #222;
   text-align: left;
 }
+.sheet-allies {
+  grid-column: 3 / span 2;
+  grid-row: 1;
+}
+.sheet-allies h2 {
+  background-color: #ccc;
+}
+.sheet-allies .sheet-tableheader > span:nth-child(2),
+.sheet-allies .sheet-tablerow > input[type="text"]:nth-child(4) {
+  width: calc(100% - 95px);
+  text-align: left;
+}
+.sheet-allies .sheet-tableheader > span:nth-child(3),
+.sheet-allies .sheet-tablerow > input[type="text"]:nth-child(5) {
+  width: 75px;
+  text-align: center;
+  border-left: 1px solid #222;
+}
+.sheet-allies input[type="hidden"][name*="header-toggle"][value="checked"] ~ * {
+  background: #eee;
+}
+.sheet-allies
+  input[type="hidden"][name*="header-toggle"][value="checked"]
+  ~ input:nth-child(4) {
+  width: calc(100% - 20px);
+}
+.sheet-allies
+  input[type="hidden"][name*="header-toggle"][value="checked"]
+  ~ select:nth-child(n + 5) {
+  display: none;
+}
+.sheet-allies .repcontrol .btn::after {
+  content: " Note";
+}
+.sheet-quests {
+  grid-column: 3 / span 2;
+  grid-row: 1;
+}
+.sheet-quests h2 {
+  background-color: #ccc;
+}
+.sheet-quests .sheet-tableheader > span:nth-child(2),
+.sheet-quests .sheet-tablerow > input[type="text"]:nth-child(4) {
+  width: calc(100% - 95px);
+  text-align: left;
+}
+.sheet-quests .sheet-tableheader > span:nth-child(3),
+.sheet-quests .sheet-tablerow > input[type="text"]:nth-child(5) {
+  width: 75px;
+  text-align: center;
+  border-left: 1px solid #222;
+}
+.sheet-quests input[type="hidden"][name*="header-toggle"][value="checked"] ~ * {
+  background: #eee;
+}
+.sheet-quests
+  input[type="hidden"][name*="header-toggle"][value="checked"]
+  ~ input:nth-child(4) {
+  width: calc(100% - 20px);
+}
+.sheet-quests
+  input[type="hidden"][name*="header-toggle"][value="checked"]
+  ~ select:nth-child(n + 5) {
+  display: none;
+}
+.sheet-quests .repcontrol .btn::after {
+  content: " Note";
+}
 .sheet-notes {
   grid-column: 3 / span 2;
   grid-row: 1;
@@ -1228,7 +1300,7 @@ h3.sheet-ys69e9::first-letter {
   text-align: left;
 }
 .sheet-partyitemstable .sheet-tableheader > span:nth-child(4),
-.sheet-partyitemstable .sheet-tablerow > input[type="text"]:nth-child(5) {
+.sheet-partyitemstable .sheet-tablerow > input[type="text"]:nth-child(6) {
   width: 45px;
 }
 .sheet-partyitemstable .sheet-tableheader > span,

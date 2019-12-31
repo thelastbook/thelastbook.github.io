@@ -8,8 +8,8 @@
 </div>
   <div class="sheet-modetoggle">
   <input type="hidden" name="attr_sheet_mode" value="">
-  <input class="sheet-mode-character" type="radio" name="attr_sheet_mode" value="character" checked>
-  <input class="sheet-mode-party" type="radio" name="attr_sheet_mode" value="party" >
+  <input class="sheet-mode-character" type="radio" name="attr_sheet_mode" value="character" checked disabled>
+  <input class="sheet-mode-party" type="radio" name="attr_sheet_mode" value="party"  disabled>
 </div>
 </div>
 
@@ -686,7 +686,7 @@
 
   <div class="sheet-table sheet-combatloadtable">
   <div class="sheet-tableheader sheet-18p1e1v">
-  <span title="This value is auto-calculated based on ST level. It does not consider advantages you may have, but can be adjusted manually if needed" class="sheet-18p1e1v">Combat Load</span><span title="This value is auto-calculated based on the &#39;combat load&#39; and &#39;weight carried&#39; fields" class="sheet-18p1e1v">Encumb. Level</span><span title="This value is auto-calculated from the items listed in both the &#39;Equipped Items&#39; and &#39;Other Items&#39; tables" class="sheet-18p1e1v">Weight Carried</span>
+  <span title="This value is auto-calculated based on ST level. It does not consider advantages you may have, but can be adjusted manually if needed" class="sheet-18p1e1v">Combat Load</span><span title="This value is auto-calculated based on the &#39;combat load&#39; and &#39;weight carried&#39; fields" class="sheet-18p1e1v">Encumb. Level</span><span title="This value is auto-calculated from the items listed in the &#39;Equipped Items&#39; table" class="sheet-18p1e1v">Weight Carried</span>
 </div>
 
   <div class="sheet-tablerow">
@@ -922,9 +922,103 @@
 </div>
 
 </div>
-    <div class="sheet-notes sheet-boxed sheet-r5lskj">
-  <h2>notes</h2>
+    <div class="sheet-sec sheet-sec-notes sheet-4g90va">
+  
+      <div class="sheet-allies sheet-boxed sheet-r5lskj">
+  <input class="sheet-toggle " type="hidden" name="attr_allies-toggle">
+    <h2>
+      Known NPCs/Organizations
+      <span>
+    <input class="sheet-toggle sheet-arrow" type="checkbox" name="attr_allies-toggle" value="checked" >
+    <span></span>
+  </span>
+    </h2>
+    <div class="sheet-drawer sheet-r5lskj">
+      
+  <div class="sheet-table sheet-allytable">
+  <div class="sheet-tableheader sheet-18p1e1v">
+  <span class="sheet-eye sheet-18p1e1v"></span><span class="sheet-18p1e1v">NPC/Organization Name</span><span title="Enter your relationship to the NPC or Organization here — Friendly, Neutral, Enemy, etc." class="sheet-18p1e1v">Relationship</span>
+</div>
+
+  <fieldset class="repeating_ally">
+      <div class="sheet-tablerow">
+        
+    <input class="sheet-toggle " type="hidden" name="attr_ally-header-toggle">
+    <input class="sheet-toggle" type="checkbox" name="attr_ally-toggle" value="checked" >
+  <span></span>
+    <input type="text" name="attr_ally-name" value="" autocomplete="new-password" class="sheet-hgmd0u">
+    <input type="text" name="attr_ally-relationship" value="" autocomplete="new-password" class="sheet-hgmd0u">
+    <div class="sheet-drawer null">
     
+      <textarea name="attr_ally-desc" rows="3" class="sheet-hgmd0u"></textarea>
+      <ul>
+        <li>
+    <input class="sheet-toggle sheet-small" type="checkbox" name="attr_ally-header-toggle" value="checked" >
+    <span>Mark as header</span>
+  </li>
+      </ul>
+    
+  </div>
+  
+      </div>
+    </fieldset>
+</div>
+
+    </div>
+</div>
+      <div class="sheet-quests sheet-boxed sheet-r5lskj">
+  <input class="sheet-toggle " type="hidden" name="attr_quests-toggle">
+    <h2>
+      Quests
+      <span>
+    <input class="sheet-toggle sheet-arrow" type="checkbox" name="attr_quests-toggle" value="checked" >
+    <span></span>
+  </span>
+    </h2>
+    <div class="sheet-drawer sheet-r5lskj">
+      
+  <div class="sheet-table sheet-questtable">
+  <div class="sheet-tableheader sheet-18p1e1v">
+  <span class="sheet-eye sheet-18p1e1v"></span><span class="sheet-18p1e1v">Quest Name</span><span title="Enter your overall progress on the quest here — Received, Started, Completed, etc." class="sheet-18p1e1v">Status</span>
+</div>
+
+  <fieldset class="repeating_quest">
+      <div class="sheet-tablerow">
+        
+    <input class="sheet-toggle " type="hidden" name="attr_quest-header-toggle">
+    <input class="sheet-toggle" type="checkbox" name="attr_quest-toggle" value="checked" >
+  <span></span>
+    <input type="text" name="attr_quest-name" value="" autocomplete="new-password" class="sheet-hgmd0u">
+    <input type="text" name="attr_quest-status" value="" autocomplete="new-password" class="sheet-hgmd0u">
+    <div class="sheet-drawer null">
+    
+      <textarea name="attr_quest-desc" rows="3" class="sheet-hgmd0u"></textarea>
+      <ul>
+        <li>
+    <input class="sheet-toggle sheet-small" type="checkbox" name="attr_quest-header-toggle" value="checked" >
+    <span>Mark as header</span>
+  </li>
+      </ul>
+    
+  </div>
+  
+      </div>
+    </fieldset>
+</div>
+
+    </div>
+</div>
+      <div class="sheet-notes sheet-boxed sheet-r5lskj">
+  <input class="sheet-toggle " type="hidden" name="attr_notes-toggle">
+    <h2>
+      Other Notes
+      <span>
+    <input class="sheet-toggle sheet-arrow" type="checkbox" name="attr_notes-toggle" value="checked" >
+    <span></span>
+  </span>
+    </h2>
+    <div class="sheet-drawer sheet-r5lskj">
+      
   <div class="sheet-table sheet-notetable">
   <div class="sheet-tableheader sheet-18p1e1v">
   <span class="sheet-eye sheet-18p1e1v"></span><span class="sheet-18p1e1v">Note</span>
@@ -953,6 +1047,10 @@
     </fieldset>
 </div>
 
+    </div>
+</div>
+
+    
 </div>
     <div class="sheet-partyinventory sheet-boxed sheet-r5lskj">
   <h2>Inventory</h2>
@@ -1591,7 +1689,7 @@
   }
 }
 
-sheet = new AmbientSheetWorkers("1.2.2");
+sheet = new AmbientSheetWorkers("1.2.3");
 
 sheet
   .listen("sheet:opened")
